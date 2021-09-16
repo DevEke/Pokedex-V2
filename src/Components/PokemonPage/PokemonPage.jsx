@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
 import { IoCloseOutline } from 'react-icons/io5';
-import { useEffect, useState } from 'react';
-import test from '../../Assets/bug.svg';
-// import axios from 'axios';
 import normal from '../../Assets/normal.svg';
 import water from '../../Assets/water.svg';
 import electric from '../../Assets/electric.svg';

@@ -1,7 +1,5 @@
  import PokemonListItem from "../PokemonListItem/PokemonListItem";
- import {Link , Redirect } from 'react-router-dom';
- import { useEffect, useState} from 'react';
- import axios from 'axios';
+ import {Link } from 'react-router-dom';
 import { IoCloseOutline } from "react-icons/io5";
 
  function PokedexHome(props) { 

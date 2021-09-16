@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import PokedexHome from './Components/PokedexHome/PokedexHome';
 import PokemonPage from './Components/PokemonPage/PokemonPage';
 import axios from 'axios';
@@ -45,11 +45,6 @@ function Pokedex() {
   }
 
 
-
-  // const selectPokemon = (pokemon) => {
-  //   setSelectedPokemon(pokemon);
-  // }
-
   useEffect(() => {
     getPokemon();
   })
@@ -59,7 +54,8 @@ function Pokedex() {
   return (
     <Router>
     <div className="App">
-     <Route exact path="/" render={() => <PokedexHome 
+     <Route exact path="/" render={() => <PokedexHome
+                                            selectedPokemon={selectedPokemon}
                                             selectPokemon={(x) => selectPokemon(x)} 
                                             pokemon={pokemon}
                                             searchQuery={searchQuery}
